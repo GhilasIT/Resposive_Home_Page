@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/btsrp.css">
+    <title>Document</title>
+    <style>
+        
+        .green{
+            background-color: green;
+        }
+        #con{
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        #div{
+            padding: 0.5cm;
+            margin: 0.3cm;
+            color: white;
+            font-size: 15px;
+            font-weight: bold;
+
+        }
+        #div:hover{
+            opacity: 0.5;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div id="con" class="container ">
+        <div id="p" class="bg-light d-flex rounded">
+            <div id="div"  style="background-color: red;" class="rounded col">
+                Popover on top
+            </div>
+            <div id="div"  style="background-color: yellow ;" class="rounded col">
+                Popover on right
+            </div>
+            <div id="div"  style="background-color: blue;" class="rounded col">
+                Popover on bottom
+            </div>
+            <div id="div"  style="background-color: green;" class="rounded col">
+                Popover on left
+            </div>
+        </div>
+            <div id="green">green</div>
+
+    </div>
+
+    <script>
+        let con = document.getElementById('con');
+
+        let green = document.getElementById('green') ;
+        green.onclick = function u(){
+            con.setAttribute('class' , 'green') ;
+        }
+
+        // let bg = document.getElementsByClassName('col');
+
+        // for( let i = 0 ; i < bg.length ; i++){
+        //     let djb = bg[i] ;
+        //     let bg1 = bg[i].getAttribute('style');
+        //     bg[i].addEventListener('click' , hu);
+            
+        //     function hu(){
+        //                     console.log(bg1) ;
+
+        //         con.setAttribute('style' , bg1) ;
+
+        //     }
+        // }
+
+
+
+    </script>
+</body>
+</html>

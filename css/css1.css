@@ -1,0 +1,85 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background: linear-gradient(to top ,rgb(78, 0, 68),rgb(37, 0, 36) );
+    height: 100vh;
+}
+
+ul li{
+    list-style: none;
+    padding: 0.5cm;
+}
+
+.logo{
+    padding: 0.5cm;
+}
+ 
+header{
+    margin: 0px;
+    position: fixed;
+    width: 100%;
+    background-color: transparent;
+    z-index: 1000;
+}
+
+header a{
+    text-decoration: none;
+    color: white !important;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   
+}
+
+.m-3:hover{
+    transform: scale(1.5 , 1.5);
+    color: red;
+   
+}
+
+.logo{
+    font-size: 60px;
+}
+
+.main{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    /* text-align: center; */
+    margin-right: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.main img{
+    position: absolute ;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+#moon{
+    mix-blend-mode: screen;
+    transform: translateY(1cm);
+}
+.u{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    transform: translateY(-5cm);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    transition: 1s;
+
+    
+}
+.main::after{
+    content: " ";
+    position: absolute;
+    bottom: 0px;
+    background-image: linear-gradient(to top , rgb(49, 0, 45) , transparent);
+    height: 100px;
+    width: 100%;
+
+}
